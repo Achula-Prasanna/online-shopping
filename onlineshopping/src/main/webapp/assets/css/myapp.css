@@ -3,9 +3,13 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+html {
+	height : 100%;
+}
 
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	height : 100%;
 }
 
 .slide-image {
@@ -50,5 +54,28 @@ body {
 }
 
 footer {
-    margin: 50px 0;
+    margin: 0;
 }
+
+
+/* Custom CSS styles to fix the footer*/
+
+.wrapper {
+	min-height : 100%;
+	position: relative;
+}
+
+.content {
+	padding-bottom : 60px;
+}
+
+.footer {
+	text-align : center;
+	position:absolute;
+	height : 60px;
+	bottom : 15px;
+}
+
+
+
+
