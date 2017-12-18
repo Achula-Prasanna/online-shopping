@@ -27,6 +27,10 @@
 <!-- Bootstrap Core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
+<!-- Bootswatch Theme -->
+<link href="${css}/bootswatch-theme.css" rel="stylesheet">
+
+
 <!-- Custom CSS -->
 <link href="${css}/myapp.css" rel="stylesheet">
 

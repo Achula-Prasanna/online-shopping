@@ -66,7 +66,7 @@ footer {
 }
 
 .content {
-	padding-bottom : 60px;
+	padding-bottom : 60px; /* height of the footer */
 }
 
 .footer {
