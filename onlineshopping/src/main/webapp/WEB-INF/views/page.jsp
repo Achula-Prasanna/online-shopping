@@ -70,10 +70,10 @@
 			</c:if>
 
 			<!-- This should load only when user clicks View products -->
-
-			<c:if test="${userClickListProducts == true }">
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true }">
 				<%@include file="listProducts.jsp"%>
-			</c:if>
+			</c:if>	
+			
 
 		</div>
 

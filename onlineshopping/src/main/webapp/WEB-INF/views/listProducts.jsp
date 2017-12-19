@@ -1,10 +1,40 @@
 <div class="container">
 	<div class="row>">
-		<h1>Products List</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-			dicta minus molestiae vel beatae natus eveniet ratione temporibus
-			aperiam harum alias officiis assumenda officia quibusdam deleniti eos
-			cupiditate dolore doloribus!</p>
+		
+		<!-- would be to display sidebar -->
+		<div class="col-md-3">
+			<%@include file="./shared/sidebar.jsp" %>
+		</div>
+		
+		<!-- would be to display actual products -->
+		<div class="col-md-9">
+			<!-- Added breadcrumb component -->
+			<div class="row">
+				<div class="col-lg-12">
+					<c:if test="${userClickAllProducts == true}">
+					<ol class="breadcrumb">
+					
+						<li><a href="${contextRoot}/home">Home</a></li>
+						<li class="active">All Products</li>
+					
+					</ol>
+					</c:if>
+					
+					<c:if test="${userClickCategoryProducts == true}">
+						<ol class="breadcrumb">
+
+
+							<li><a href="${contextRoot}/home">Home</a></li>
+							<li class="active">Category</li>
+							<li class="active">${category.name}</li>
+
+
+						</ol>
+					</c:if>
+					
+				</div>
+		
+		</div>
 	</div>
 
 </div>
